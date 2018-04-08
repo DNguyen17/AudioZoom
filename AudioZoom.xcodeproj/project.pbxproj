@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B44881E72079AEB900233FDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B44881E62079AEB900233FDE /* AppDelegate.m */; };
+		B44881EA2079AEB900233FDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44881E92079AEB900233FDE /* ViewController.m */; };
+		B44881ED2079AEB900233FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44881EB2079AEB900233FDE /* Main.storyboard */; };
+		B44881F02079AEB900233FDE /* AudioZoom.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B44881EE2079AEB900233FDE /* AudioZoom.xcdatamodeld */; };
+		B44881F22079AEBA00233FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B44881F12079AEBA00233FDE /* Assets.xcassets */; };
+		B44881F52079AEBA00233FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B44881F32079AEBA00233FDE /* LaunchScreen.storyboard */; };
+		B44881F82079AEBA00233FDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B44881F72079AEBA00233FDE /* main.m */; };
+		B44882022079AEBA00233FDE /* AudioZoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44882012079AEBA00233FDE /* AudioZoomTests.m */; };
+		B448820D2079AEBB00233FDE /* AudioZoomUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B448820C2079AEBB00233FDE /* AudioZoomUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B44881FE2079AEBA00233FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44881DA2079AEB800233FDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44881E12079AEB800233FDE;
+			remoteInfo = AudioZoom;
+		};
+		B44882092079AEBB00233FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B44881DA2079AEB800233FDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B44881E12079AEB800233FDE;
+			remoteInfo = AudioZoom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B44881E22079AEB800233FDE /* AudioZoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioZoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44881E52079AEB800233FDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B44881E62079AEB900233FDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B44881E82079AEB900233FDE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B44881E92079AEB900233FDE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B44881EC2079AEB900233FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B44881EF2079AEB900233FDE /* AudioZoom.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudioZoom.xcdatamodel; sourceTree = "<group>"; };
+		B44881F12079AEBA00233FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B44881F42079AEBA00233FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B44881F62079AEBA00233FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44881F72079AEBA00233FDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B44881FD2079AEBA00233FDE /* AudioZoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioZoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B44882012079AEBA00233FDE /* AudioZoomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioZoomTests.m; sourceTree = "<group>"; };
+		B44882032079AEBA00233FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B44882082079AEBB00233FDE /* AudioZoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioZoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B448820C2079AEBB00233FDE /* AudioZoomUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioZoomUITests.m; sourceTree = "<group>"; };
+		B448820E2079AEBB00233FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B44881DF2079AEB800233FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44881FA2079AEBA00233FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44882052079AEBB00233FDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B44881D92079AEB800233FDE = {
+			isa = PBXGroup;
+			children = (
+				B44881E42079AEB800233FDE /* AudioZoom */,
+				B44882002079AEBA00233FDE /* AudioZoomTests */,
+				B448820B2079AEBB00233FDE /* AudioZoomUITests */,
+				B44881E32079AEB800233FDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B44881E32079AEB800233FDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B44881E22079AEB800233FDE /* AudioZoom.app */,
+				B44881FD2079AEBA00233FDE /* AudioZoomTests.xctest */,
+				B44882082079AEBB00233FDE /* AudioZoomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B44881E42079AEB800233FDE /* AudioZoom */ = {
+			isa = PBXGroup;
+			children = (
+				B44881E52079AEB800233FDE /* AppDelegate.h */,
+				B44881E62079AEB900233FDE /* AppDelegate.m */,
+				B44881E82079AEB900233FDE /* ViewController.h */,
+				B44881E92079AEB900233FDE /* ViewController.m */,
+				B44881EB2079AEB900233FDE /* Main.storyboard */,
+				B44881F12079AEBA00233FDE /* Assets.xcassets */,
+				B44881F32079AEBA00233FDE /* LaunchScreen.storyboard */,
+				B44881F62079AEBA00233FDE /* Info.plist */,
+				B44881F72079AEBA00233FDE /* main.m */,
+				B44881EE2079AEB900233FDE /* AudioZoom.xcdatamodeld */,
+			);
+			path = AudioZoom;
+			sourceTree = "<group>";
+		};
+		B44882002079AEBA00233FDE /* AudioZoomTests */ = {
+			isa = PBXGroup;
+			children = (
+				B44882012079AEBA00233FDE /* AudioZoomTests.m */,
+				B44882032079AEBA00233FDE /* Info.plist */,
+			);
+			path = AudioZoomTests;
+			sourceTree = "<group>";
+		};
+		B448820B2079AEBB00233FDE /* AudioZoomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B448820C2079AEBB00233FDE /* AudioZoomUITests.m */,
+				B448820E2079AEBB00233FDE /* Info.plist */,
+			);
+			path = AudioZoomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44881E12079AEB800233FDE /* AudioZoom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44882112079AEBB00233FDE /* Build configuration list for PBXNativeTarget "AudioZoom" */;
+			buildPhases = (
+				B44881DE2079AEB800233FDE /* Sources */,
+				B44881DF2079AEB800233FDE /* Frameworks */,
+				B44881E02079AEB800233FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioZoom;
+			productName = AudioZoom;
+			productReference = B44881E22079AEB800233FDE /* AudioZoom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B44881FC2079AEBA00233FDE /* AudioZoomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44882142079AEBB00233FDE /* Build configuration list for PBXNativeTarget "AudioZoomTests" */;
+			buildPhases = (
+				B44881F92079AEBA00233FDE /* Sources */,
+				B44881FA2079AEBA00233FDE /* Frameworks */,
+				B44881FB2079AEBA00233FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B44881FF2079AEBA00233FDE /* PBXTargetDependency */,
+			);
+			name = AudioZoomTests;
+			productName = AudioZoomTests;
+			productReference = B44881FD2079AEBA00233FDE /* AudioZoomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B44882072079AEBB00233FDE /* AudioZoomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B44882172079AEBB00233FDE /* Build configuration list for PBXNativeTarget "AudioZoomUITests" */;
+			buildPhases = (
+				B44882042079AEBB00233FDE /* Sources */,
+				B44882052079AEBB00233FDE /* Frameworks */,
+				B44882062079AEBB00233FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B448820A2079AEBB00233FDE /* PBXTargetDependency */,
+			);
+			name = AudioZoomUITests;
+			productName = AudioZoomUITests;
+			productReference = B44882082079AEBB00233FDE /* AudioZoomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B44881DA2079AEB800233FDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Danh Nguyen";
+				TargetAttributes = {
+					B44881E12079AEB800233FDE = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					B44881FC2079AEBA00233FDE = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = B44881E12079AEB800233FDE;
+					};
+					B44882072079AEBB00233FDE = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = B44881E12079AEB800233FDE;
+					};
+				};
+			};
+			buildConfigurationList = B44881DD2079AEB800233FDE /* Build configuration list for PBXProject "AudioZoom" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B44881D92079AEB800233FDE;
+			productRefGroup = B44881E32079AEB800233FDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B44881E12079AEB800233FDE /* AudioZoom */,
+				B44881FC2079AEBA00233FDE /* AudioZoomTests */,
+				B44882072079AEBB00233FDE /* AudioZoomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B44881E02079AEB800233FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44881F52079AEBA00233FDE /* LaunchScreen.storyboard in Resources */,
+				B44881F22079AEBA00233FDE /* Assets.xcassets in Resources */,
+				B44881ED2079AEB900233FDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44881FB2079AEBA00233FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44882062079AEBB00233FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B44881DE2079AEB800233FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44881EA2079AEB900233FDE /* ViewController.m in Sources */,
+				B44881E72079AEB900233FDE /* AppDelegate.m in Sources */,
+				B44881F82079AEBA00233FDE /* main.m in Sources */,
+				B44881F02079AEB900233FDE /* AudioZoom.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44881F92079AEBA00233FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44882022079AEBA00233FDE /* AudioZoomTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B44882042079AEBB00233FDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B448820D2079AEBB00233FDE /* AudioZoomUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B44881FF2079AEBA00233FDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44881E12079AEB800233FDE /* AudioZoom */;
+			targetProxy = B44881FE2079AEBA00233FDE /* PBXContainerItemProxy */;
+		};
+		B448820A2079AEBB00233FDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B44881E12079AEB800233FDE /* AudioZoom */;
+			targetProxy = B44882092079AEBB00233FDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B44881EB2079AEB900233FDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44881EC2079AEB900233FDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B44881F32079AEBA00233FDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B44881F42079AEBA00233FDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B448820F2079AEBB00233FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B44882102079AEBB00233FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B44882122079AEBB00233FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
+				INFOPLIST_FILE = AudioZoom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danhn.AudioZoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B44882132079AEBB00233FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
+				INFOPLIST_FILE = AudioZoom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danhn.AudioZoom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B44882152079AEBB00233FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
+				INFOPLIST_FILE = AudioZoomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danhn.AudioZoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioZoom.app/AudioZoom";
+			};
+			name = Debug;
+		};
+		B44882162079AEBB00233FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
+				INFOPLIST_FILE = AudioZoomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danhn.AudioZoomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AudioZoom.app/AudioZoom";
+			};
+			name = Release;
+		};
+		B44882182079AEBB00233FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
+				INFOPLIST_FILE = AudioZoomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danhn.AudioZoomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AudioZoom;
+			};
+			name = Debug;
+		};
+		B44882192079AEBB00233FDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F69WJ27LN4;
+				INFOPLIST_FILE = AudioZoomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = danhn.AudioZoomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AudioZoom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B44881DD2079AEB800233FDE /* Build configuration list for PBXProject "AudioZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B448820F2079AEBB00233FDE /* Debug */,
+				B44882102079AEBB00233FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44882112079AEBB00233FDE /* Build configuration list for PBXNativeTarget "AudioZoom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44882122079AEBB00233FDE /* Debug */,
+				B44882132079AEBB00233FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44882142079AEBB00233FDE /* Build configuration list for PBXNativeTarget "AudioZoomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44882152079AEBB00233FDE /* Debug */,
+				B44882162079AEBB00233FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B44882172079AEBB00233FDE /* Build configuration list for PBXNativeTarget "AudioZoomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B44882182079AEBB00233FDE /* Debug */,
+				B44882192079AEBB00233FDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B44881EE2079AEB900233FDE /* AudioZoom.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B44881EF2079AEB900233FDE /* AudioZoom.xcdatamodel */,
+			);
+			currentVersion = B44881EF2079AEB900233FDE /* AudioZoom.xcdatamodel */;
+			path = AudioZoom.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B44881DA2079AEB800233FDE /* Project object */;
+}
