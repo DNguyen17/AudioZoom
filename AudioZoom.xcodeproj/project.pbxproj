@@ -16,6 +16,15 @@
 		B44881F82079AEBA00233FDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B44881F72079AEBA00233FDE /* main.m */; };
 		B44882022079AEBA00233FDE /* AudioZoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B44882012079AEBA00233FDE /* AudioZoomTests.m */; };
 		B448820D2079AEBB00233FDE /* AudioZoomUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B448820C2079AEBB00233FDE /* AudioZoomUITests.m */; };
+		B4488226207AA1DA00233FDE /* PeakFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = B448821D207AA1D900233FDE /* PeakFinder.m */; };
+		B4488227207AA1DA00233FDE /* CubicSpline.m in Sources */ = {isa = PBXBuildFile; fileRef = B448821E207AA1D900233FDE /* CubicSpline.m */; };
+		B4488228207AA1DA00233FDE /* CircularBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B448821F207AA1D900233FDE /* CircularBuffer.m */; };
+		B4488229207AA1DA00233FDE /* Novocaine.m in Sources */ = {isa = PBXBuildFile; fileRef = B4488221207AA1D900233FDE /* Novocaine.m */; };
+		B448822A207AA1DA00233FDE /* DataBufferBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = B4488222207AA1DA00233FDE /* DataBufferBlock.m */; };
+		B448822B207AA1DA00233FDE /* FFTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B4488225207AA1DA00233FDE /* FFTHelper.m */; };
+		B448822E207AA7BB00233FDE /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B448822C207AA7BB00233FDE /* ScrollViewController.m */; };
+		B4488233207AA94400233FDE /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4488230207AA94400233FDE /* AudioFileWriter.m */; };
+		B4488234207AA94500233FDE /* AudioFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B4488231207AA94400233FDE /* AudioFileReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +62,24 @@
 		B44882082079AEBB00233FDE /* AudioZoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioZoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B448820C2079AEBB00233FDE /* AudioZoomUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioZoomUITests.m; sourceTree = "<group>"; };
 		B448820E2079AEBB00233FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B448821A207AA1D800233FDE /* DataBufferBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataBufferBlock.h; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/DataBufferBlock.h"; sourceTree = "<group>"; };
+		B448821B207AA1D800233FDE /* Novocaine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Novocaine.h; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/Novocaine.h"; sourceTree = "<group>"; };
+		B448821C207AA1D800233FDE /* CircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircularBuffer.h; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/CircularBuffer.h"; sourceTree = "<group>"; };
+		B448821D207AA1D900233FDE /* PeakFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PeakFinder.m; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/PeakFinder.m"; sourceTree = "<group>"; };
+		B448821E207AA1D900233FDE /* CubicSpline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CubicSpline.m; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/CubicSpline.m"; sourceTree = "<group>"; };
+		B448821F207AA1D900233FDE /* CircularBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircularBuffer.m; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/CircularBuffer.m"; sourceTree = "<group>"; };
+		B4488220207AA1D900233FDE /* FFTHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFTHelper.h; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/FFTHelper.h"; sourceTree = "<group>"; };
+		B4488221207AA1D900233FDE /* Novocaine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Novocaine.m; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/Novocaine.m"; sourceTree = "<group>"; };
+		B4488222207AA1DA00233FDE /* DataBufferBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataBufferBlock.m; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/DataBufferBlock.m"; sourceTree = "<group>"; };
+		B4488223207AA1DA00233FDE /* PeakFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PeakFinder.h; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/PeakFinder.h"; sourceTree = "<group>"; };
+		B4488224207AA1DA00233FDE /* CubicSpline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubicSpline.h; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/CubicSpline.h"; sourceTree = "<group>"; };
+		B4488225207AA1DA00233FDE /* FFTHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFTHelper.m; path = "../../mobile-sensing-apps/AudioSeer/AudioSeer/FFTHelper.m"; sourceTree = "<group>"; };
+		B448822C207AA7BB00233FDE /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
+		B448822D207AA7BB00233FDE /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		B448822F207AA94400233FDE /* AudioFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileReader.h; sourceTree = "<group>"; };
+		B4488230207AA94400233FDE /* AudioFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileWriter.m; sourceTree = "<group>"; };
+		B4488231207AA94400233FDE /* AudioFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileReader.m; sourceTree = "<group>"; };
+		B4488232207AA94400233FDE /* AudioFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileWriter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +130,24 @@
 		B44881E42079AEB800233FDE /* AudioZoom */ = {
 			isa = PBXGroup;
 			children = (
+				B448822D207AA7BB00233FDE /* ScrollViewController.h */,
+				B448822C207AA7BB00233FDE /* ScrollViewController.m */,
+				B448822F207AA94400233FDE /* AudioFileReader.h */,
+				B4488231207AA94400233FDE /* AudioFileReader.m */,
+				B4488232207AA94400233FDE /* AudioFileWriter.h */,
+				B4488230207AA94400233FDE /* AudioFileWriter.m */,
+				B448821C207AA1D800233FDE /* CircularBuffer.h */,
+				B448821F207AA1D900233FDE /* CircularBuffer.m */,
+				B4488224207AA1DA00233FDE /* CubicSpline.h */,
+				B448821E207AA1D900233FDE /* CubicSpline.m */,
+				B448821A207AA1D800233FDE /* DataBufferBlock.h */,
+				B4488222207AA1DA00233FDE /* DataBufferBlock.m */,
+				B4488220207AA1D900233FDE /* FFTHelper.h */,
+				B4488225207AA1DA00233FDE /* FFTHelper.m */,
+				B448821B207AA1D800233FDE /* Novocaine.h */,
+				B4488221207AA1D900233FDE /* Novocaine.m */,
+				B4488223207AA1DA00233FDE /* PeakFinder.h */,
+				B448821D207AA1D900233FDE /* PeakFinder.m */,
 				B44881E52079AEB800233FDE /* AppDelegate.h */,
 				B44881E62079AEB900233FDE /* AppDelegate.m */,
 				B44881E82079AEB900233FDE /* ViewController.h */,
@@ -265,10 +310,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B448822A207AA1DA00233FDE /* DataBufferBlock.m in Sources */,
+				B4488229207AA1DA00233FDE /* Novocaine.m in Sources */,
 				B44881EA2079AEB900233FDE /* ViewController.m in Sources */,
+				B4488226207AA1DA00233FDE /* PeakFinder.m in Sources */,
+				B448822E207AA7BB00233FDE /* ScrollViewController.m in Sources */,
+				B4488228207AA1DA00233FDE /* CircularBuffer.m in Sources */,
 				B44881E72079AEB900233FDE /* AppDelegate.m in Sources */,
 				B44881F82079AEBA00233FDE /* main.m in Sources */,
 				B44881F02079AEB900233FDE /* AudioZoom.xcdatamodeld in Sources */,
+				B448822B207AA1DA00233FDE /* FFTHelper.m in Sources */,
+				B4488227207AA1DA00233FDE /* CubicSpline.m in Sources */,
+				B4488233207AA94400233FDE /* AudioFileWriter.m in Sources */,
+				B4488234207AA94500233FDE /* AudioFileReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +492,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F69WJ27LN4;
+				DEVELOPMENT_TEAM = F2239UUYY8;
 				INFOPLIST_FILE = AudioZoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F69WJ27LN4;
+				DEVELOPMENT_TEAM = F2239UUYY8;
 				INFOPLIST_FILE = AudioZoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
