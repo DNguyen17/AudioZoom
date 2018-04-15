@@ -1,12 +1,12 @@
 //
-//  ScrollViewController.m
-//  AudioSeer
+//  ImageViewController.m
+//  AudioZoom
 //
-//  Created by Danh Nguyen on 2/2/18.
+//  Created by Danh Nguyen on 4/15/18.
 //  Copyright © 2018 Danh Nguyen. All rights reserved.
 //
 
-#import "ScrollViewController.h"
+#import "ImageViewController.h"
 #import "Novocaine.h"
 #import "CircularBuffer.h"
 #import "FFTHelper.h"
@@ -16,25 +16,16 @@
 #define RANGE_OF_AVERAGE 25
 #define FREQUENCY 19000
 
-@interface ScrollViewController ()
+@interface ImageViewController ()
 @property (strong, nonatomic) Novocaine *audioManager;
 @property (strong, nonatomic) CircularBuffer *buffer;
 @property (strong, nonatomic) FFTHelper *fftHelper;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (strong, nonatomic) UIImageView* imageView;
+@property (strong, nonatomic) IBOutlet UIImageView* imageView;
 @property double baselineLeftAverage;
 @property double baselineRightAverage;
 @end
 
-@implementation ScrollViewController
-
--(UIImageView*)imageView{
-    
-    if(!_imageView) {
-        _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Stock"]];
-    }
-    return _imageView;
-}
+@implementation ImageViewController
 
 -(Novocaine*)audioManager{
     if(!_audioManager){
@@ -62,25 +53,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.scrollView addSubview:self.imageView];
-    self.scrollView.contentSize = self.imageView.image.size;
-    self.scrollView.minimumZoomScale=0.1;
-    self.scrollView.maximumZoomScale=3.0;
-    self.scrollView.delegate = self;
-    
-    [self.scrollView zoomToRect:CGRectMake(0, 0, 2500, 2500) animated:NO];
     
     // initialize input block
-    __block ScrollViewController * __weak  weakSelf = self;
+    __block ImageViewController * __weak  weakSelf = self;
     [self.audioManager setInputBlock:^(float *data, UInt32 numFrames, UInt32 numChannels){
         [weakSelf.buffer addNewFloatData:data withNumSamples:numFrames];
     }];
-
+    
     // play sound
     __block double phase = 0.0;
     double phaseIncrement = 2.0*M_PI*((double)FREQUENCY)/((double)self.audioManager.samplingRate);
     double phaseMax = 2.0*M_PI;
-
+    
     [self.audioManager setOutputBlock:^(float* data, UInt32 numFrames, UInt32 numChannels){
         for(int i=0; i<numFrames;++i){
             for(int j=0;j<numChannels;++j){
@@ -109,9 +93,7 @@
                                    selector:@selector(calculateDoppler:)
                                    userInfo:nil
                                     repeats:YES];
-
 }
-
 
 -(void)viewDidDisappear:(BOOL)animated {
     [self.audioManager setOutputBlock:nil];
@@ -120,15 +102,10 @@
     
 }
 
-
--(UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
-    return self.imageView;
-}
-
 - (void) calculateDoppler:(NSTimer *)timer
 {
     //Do calculations.
-    __block ScrollViewController * __weak weakSelf = self;
+    __block ImageViewController * __weak weakSelf = self;
     dispatch_queue_t dopplerQueue = dispatch_queue_create("dopplerQueue", DISPATCH_QUEUE_CONCURRENT);
     dispatch_async(dopplerQueue, ^{
         float* arrayData = malloc(sizeof(float)*BUFFER_SIZE);
@@ -138,42 +115,31 @@
         
         // take forward FFT
         [weakSelf.fftHelper performForwardFFTWithData:arrayData
-                       andCopydBMagnitudeToBuffer:fftMagnitude];
+                           andCopydBMagnitudeToBuffer:fftMagnitude];
         
         //right
-         double rightValue = [weakSelf calcSideAverage:fftMagnitude
-                                               isRight:(YES)];
+        double rightValue = [weakSelf calcSideAverage:fftMagnitude
+                                              isRight:(YES)];
         
         //left
-         double leftValue = [weakSelf calcSideAverage:fftMagnitude
-                                              isRight:(NO)];
+        double leftValue = [weakSelf calcSideAverage:fftMagnitude
+                                             isRight:(NO)];
         
         double threshold = 20; //decibels;
         
         if(rightValue - weakSelf.baselineRightAverage > threshold) {
             NSLog(@"towards");
-            double scale = (1+(rightValue - weakSelf.baselineRightAverage - threshold)/threshold) * weakSelf.scrollView.zoomScale;
-            scale = MIN(scale, 3.0);
-            NSLog(@"%g", scale);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [weakSelf.scrollView setZoomScale: scale animated:YES];
-            });
+            
         }
         else if (leftValue - weakSelf.baselineLeftAverage > threshold) {
             NSLog(@"away");
-            double scale = (1-(leftValue - weakSelf.baselineLeftAverage - threshold)/threshold) * weakSelf.scrollView.zoomScale;
-            scale = MAX(scale, 0.1);
-            NSLog(@"%g", scale);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                 [weakSelf.scrollView setZoomScale: scale animated:YES];
-            });
-
+            
         }
         
         free(arrayData);
         free(fftMagnitude);
     });
-
+    
 }
 
 -(double) calcSideAverage: (float*) fftMagnitude
@@ -187,7 +153,7 @@
         average += fftMagnitude[i];
     }
     average /= RANGE_OF_AVERAGE;
-
+    
     return average;
     
 }
@@ -207,19 +173,24 @@
     self.baselineRightAverage = -50.0;
     
     float leftAverage = [self calcSideAverage: fftMagnitude
-                                             isRight: (NO)];
+                                      isRight: (NO)];
     if (leftAverage != 0) {
         self.baselineLeftAverage = leftAverage;
     }
     
     float rightAverage = [self calcSideAverage:fftMagnitude
-                                              isRight: (YES)];
+                                       isRight: (YES)];
     if (rightAverage != 0) {
         self.baselineRightAverage = rightAverage;
     }
     
     free(arrayData);
     free(fftMagnitude);
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

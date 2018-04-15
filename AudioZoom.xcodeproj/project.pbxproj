@@ -25,6 +25,7 @@
 		B448822E207AA7BB00233FDE /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B448822C207AA7BB00233FDE /* ScrollViewController.m */; };
 		B4488233207AA94400233FDE /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B4488230207AA94400233FDE /* AudioFileWriter.m */; };
 		B4488234207AA94500233FDE /* AudioFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B4488231207AA94400233FDE /* AudioFileReader.m */; };
+		B44882382083F5F400233FDE /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B44882372083F5F400233FDE /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		B4488230207AA94400233FDE /* AudioFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileWriter.m; sourceTree = "<group>"; };
 		B4488231207AA94400233FDE /* AudioFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioFileReader.m; sourceTree = "<group>"; };
 		B4488232207AA94400233FDE /* AudioFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileWriter.h; sourceTree = "<group>"; };
+		B44882362083F5F400233FDE /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		B44882372083F5F400233FDE /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +133,14 @@
 		B44881E42079AEB800233FDE /* AudioZoom */ = {
 			isa = PBXGroup;
 			children = (
-				B448822D207AA7BB00233FDE /* ScrollViewController.h */,
-				B448822C207AA7BB00233FDE /* ScrollViewController.m */,
+				B44881E52079AEB800233FDE /* AppDelegate.h */,
+				B44881E62079AEB900233FDE /* AppDelegate.m */,
+				B44881F12079AEBA00233FDE /* Assets.xcassets */,
 				B448822F207AA94400233FDE /* AudioFileReader.h */,
 				B4488231207AA94400233FDE /* AudioFileReader.m */,
 				B4488232207AA94400233FDE /* AudioFileWriter.h */,
 				B4488230207AA94400233FDE /* AudioFileWriter.m */,
+				B44881EE2079AEB900233FDE /* AudioZoom.xcdatamodeld */,
 				B448821C207AA1D800233FDE /* CircularBuffer.h */,
 				B448821F207AA1D900233FDE /* CircularBuffer.m */,
 				B4488224207AA1DA00233FDE /* CubicSpline.h */,
@@ -144,20 +149,20 @@
 				B4488222207AA1DA00233FDE /* DataBufferBlock.m */,
 				B4488220207AA1D900233FDE /* FFTHelper.h */,
 				B4488225207AA1DA00233FDE /* FFTHelper.m */,
+				B44881F62079AEBA00233FDE /* Info.plist */,
+				B44881F32079AEBA00233FDE /* LaunchScreen.storyboard */,
+				B44881F72079AEBA00233FDE /* main.m */,
+				B44881EB2079AEB900233FDE /* Main.storyboard */,
 				B448821B207AA1D800233FDE /* Novocaine.h */,
 				B4488221207AA1D900233FDE /* Novocaine.m */,
 				B4488223207AA1DA00233FDE /* PeakFinder.h */,
 				B448821D207AA1D900233FDE /* PeakFinder.m */,
-				B44881E52079AEB800233FDE /* AppDelegate.h */,
-				B44881E62079AEB900233FDE /* AppDelegate.m */,
+				B448822D207AA7BB00233FDE /* ScrollViewController.h */,
+				B448822C207AA7BB00233FDE /* ScrollViewController.m */,
 				B44881E82079AEB900233FDE /* ViewController.h */,
 				B44881E92079AEB900233FDE /* ViewController.m */,
-				B44881EB2079AEB900233FDE /* Main.storyboard */,
-				B44881F12079AEBA00233FDE /* Assets.xcassets */,
-				B44881F32079AEBA00233FDE /* LaunchScreen.storyboard */,
-				B44881F62079AEBA00233FDE /* Info.plist */,
-				B44881F72079AEBA00233FDE /* main.m */,
-				B44881EE2079AEB900233FDE /* AudioZoom.xcdatamodeld */,
+				B44882362083F5F400233FDE /* ImageViewController.h */,
+				B44882372083F5F400233FDE /* ImageViewController.m */,
 			);
 			path = AudioZoom;
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 				B448822B207AA1DA00233FDE /* FFTHelper.m in Sources */,
 				B4488227207AA1DA00233FDE /* CubicSpline.m in Sources */,
 				B4488233207AA94400233FDE /* AudioFileWriter.m in Sources */,
+				B44882382083F5F400233FDE /* ImageViewController.m in Sources */,
 				B4488234207AA94500233FDE /* AudioFileReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
