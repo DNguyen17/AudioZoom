@@ -16,6 +16,7 @@
 #define RANGE_OF_AVERAGE 25
 #define FREQUENCY 19000
 
+
 @interface ImageViewController ()
 @property (strong, nonatomic) Novocaine *audioManager;
 @property (strong, nonatomic) CircularBuffer *buffer;
@@ -23,6 +24,8 @@
 @property (strong, nonatomic) IBOutlet UIImageView* imageView;
 @property double baselineLeftAverage;
 @property double baselineRightAverage;
+@property NSArray *imageNames;
+@property int imageIndex;
 @end
 
 @implementation ImageViewController
@@ -53,6 +56,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.imageNames = @[@"Stock", @"Stock2", @"Stock3"];
+    self.imageIndex = 0;
+    UIImage *image = [UIImage imageNamed: self.imageNames[self.imageIndex]];
+    [self.imageView setImage:image];
     
     // initialize input block
     __block ImageViewController * __weak  weakSelf = self;
@@ -88,7 +95,7 @@
                                     repeats:NO];
     
     // run doppler loop in background
-    [NSTimer scheduledTimerWithTimeInterval:0.1f
+    [NSTimer scheduledTimerWithTimeInterval:0.2f
                                      target:self
                                    selector:@selector(calculateDoppler:)
                                    userInfo:nil
@@ -129,10 +136,25 @@
         
         if(rightValue - weakSelf.baselineRightAverage > threshold) {
             NSLog(@"towards");
-            
+            if (self.imageIndex < [self.imageNames count]-1) {
+                self.imageIndex++;
+            } else {
+                self.imageIndex = 0;
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf.imageView setImage:([UIImage imageNamed: self.imageNames[self.imageIndex]])];
+            });
         }
         else if (leftValue - weakSelf.baselineLeftAverage > threshold) {
             NSLog(@"away");
+            if (self.imageIndex > 0) {
+                self.imageIndex--;
+            } else {
+                self.imageIndex = (int)[self.imageNames count]-1;
+            }
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [weakSelf.imageView setImage:([UIImage imageNamed: self.imageNames[self.imageIndex]])];
+            });
             
         }
         
